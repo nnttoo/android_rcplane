@@ -1,0 +1,126 @@
+
+@font-face {
+    font-family: 'Arimo-Regular';
+    src: url('/style/fontArimo/Arimo-Regular.eot');
+    src: url('/style/fontArimo/Arimo-Regular.woff2') format('woff2'),
+         url('/style/fontArimo/Arimo-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arimo';
+    src: url('/style/fontArimo/Arimo.woff') format('woff'),
+         url('/style/fontArimo/Arimo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body{
+    font-family: 'Arimo-Regular' , sans-serif; 
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+}
+#myhead{
+    position: fixed;
+    height: 50px; 
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    color: #333;   
+    background: #eee; 
+    z-index: 100;
+}
+#myhead::before{
+    content: " ";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px; 
+}
+#icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+#myhead h1{
+    color: #333;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#myhead::after{
+    content: ' ';
+    background: linear-gradient(to bottom, #191a1c, #f7b709);
+    position: fixed;
+    top: 50px;
+    height: 3px;
+    left: 0px;
+    right: 0px;;
+}
+
+
+
+
+#content{
+  text-align: left;  
+  padding-left: 230px;
+  padding-top: 100px;
+  min-height: 1000px;
+}
+#postitle{
+    font-size: 30px; 
+    margin: 0px;
+    display: block;
+}
+
+#postcontent{
+    margin-top: 20px;
+}
+.but{
+    display: inline-block;
+    padding: 3px 20px 3px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    background: #f7b709;
+    color: #333;
+}
+.but:hover{
+    background: #977203;
+    color: #fff;
+
+}
+
+/** Sidebar **/
+
+#leftbar{
+    background: #f3e5c6;
+    color: #000;
+    width: 200px; 
+    position: fixed;
+    left: 0px;
+    top:50px;
+    bottom: 0px;
+    width: 200px;
+    overflow: auto;
+    padding-top: 20px;
+}
+#leftbar a{
+    display: block;
+    background: #f7b709;
+    padding: 5px;
+    margin: 1px 0px 1px 0px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    
+} 
+#leftbar a:hover{
+    background: #977203;
+    color: #fff;
+
+}
