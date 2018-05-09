@@ -16,7 +16,7 @@ Themes.prototype.head = function(){
     var head = $('<div id="myhead"></div>');
     this.body.append(head);
 
-    var headhtml = '<img id="icon" src="/style/icon.png"/>' +
+    var headhtml = '<img id="icon" src="/android_rcplane/style/icon.png"/>' +
     '<h1>Arduino Rc Plane</h1>';
 
     head.html(headhtml);
