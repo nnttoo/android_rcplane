@@ -38,7 +38,7 @@ Themes.prototype.head = function(){
 Themes.prototype.createSidebar = function(jqsidebar){
  
         var my = this;
-        $.get('/sidebar.txt',function(data){ 
+        $.get('/android_rcplane/sidebar.txt',function(data){ 
             jqsidebar.append(data); 
 
             var a = jqsidebar.find('a');
